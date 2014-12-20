@@ -38,6 +38,15 @@ wreckRemovalMaxTime = 360;
 
 class CfgRemoteExecCommands {};
 
+class cfgMusic
+{
+   class intro
+   {
+        name = "intro";
+        sound[] = {"sounds\intro.ogg", db+1,1}; 
+    };
+};
+
 
 
 #include "infiSTAR_AdminMenu.hpp"
