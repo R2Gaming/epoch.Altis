@@ -7,8 +7,8 @@ _onScreenTime = 6; //how long one role should stay on screen. Use value from 0 t
 _IntroMusic = false; // Intro Music With the credits. Defualt = False. (true or false)
 _size1 = 0.50; // Size for The Heading in each credit role
 _color1 = "#FF004C"; // #f2cb0b is HTML Code. change it to whatever you want. make sure its a valid HTML code with # infront
-_size1 = 0.50; // size for each sub Credit
-_color1 = "#FF004C"; // #FFFFFF is HTML Code. change it to whatever you want. make sure its a valid HTML code with # infront
+_size2 = 0.50; // size for each sub Credit
+_color2 = "#FF004C"; // #FFFFFF is HTML Code. change it to whatever you want. make sure its a valid HTML code with # infront
 // Find the color code you want here: http://html-color-codes.info
 
 // ==== CUSTOMIZING THE CREDITS ===
@@ -17,6 +17,8 @@ _color1 = "#FF004C"; // #FFFFFF is HTML Code. change it to whatever you want. ma
 // Just take a good look at the _role1 and the rest and you will see what I mean.
  
 // ==== SCRIPT START ====
+waitUntil {!isNuLL(uiNameSpace getVariable ["EPOCH_loadingScreen",displayNull])};
+waitUntil {isNuLL(uiNameSpace getVariable ["EPOCH_loadingScreen",displayNull])};
 sleep _Delay;
 
 if (_IntroMusic) then {
