@@ -1,2 +1,2 @@
-[] execVM "custom\welcome.sqf";
+[] execVM "scripts\welcome.sqf";
 [player] execVM "scripts\simpleEP.sqf";
