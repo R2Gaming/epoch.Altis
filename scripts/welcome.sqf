@@ -4,7 +4,7 @@
 _Delay = 5; // //Wait in seconds before the credits start after player IS ingame
 _onScreenTime = 6; //how long one role should stay on screen. Use value from 0 to 10 where 0 is almost instant transition to next role
 //NOTE: Above value is not in seconds. It is percentage. Default: 6
-_IntroMusic = false; // Intro Music With the credits. Defualt = False. (true or false)
+_IntroMusic = true; // Intro Music With the credits. Defualt = False. (true or false)
 _size1 = 0.50; // Size for The Heading in each credit role
 _color1 = "#FF004C"; // #f2cb0b is HTML Code. change it to whatever you want. make sure its a valid HTML code with # infront
 _size2 = 0.50; // size for each sub Credit
