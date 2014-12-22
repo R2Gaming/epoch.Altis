@@ -4,11 +4,11 @@
 _Delay = 5; // //Wait in seconds before the credits start after player IS ingame
 _onScreenTime = 6; //how long one role should stay on screen. Use value from 0 to 10 where 0 is almost instant transition to next role
 //NOTE: Above value is not in seconds. It is percentage. Default: 6
-_IntroMusic = true; // Intro Music With the credits. Defualt = False. (true or false)
-_size1 = 0.50; // Size for The Heading in each credit role
-_color1 = "#FF004C"; // #f2cb0b is HTML Code. change it to whatever you want. make sure its a valid HTML code with # infront
+_IntroMusic = false; // Intro Music With the credits. Defualt = False. (true or false)
+_size1 = 0.60; // Size for The Heading in each credit role
+_color1 = "#EFF700"; // #f2cb0b is HTML Code. change it to whatever you want. make sure its a valid HTML code with # infront
 _size2 = 0.50; // size for each sub Credit
-_color2 = "#FF004C"; // #FFFFFF is HTML Code. change it to whatever you want. make sure its a valid HTML code with # infront
+_color2 = "#FFFFFF"; // #FFFFFF is HTML Code. change it to whatever you want. make sure its a valid HTML code with # infront
 // Find the color code you want here: http://html-color-codes.info
 
 // ==== CUSTOMIZING THE CREDITS ===
@@ -22,27 +22,27 @@ waitUntil {isNuLL(uiNameSpace getVariable ["EPOCH_loadingScreen",displayNull])};
 sleep _Delay;
 
 if (_IntroMusic) then {
-    playSound "Intro"; // This calls the code inside of description.ext //
+    playSound "intro"; // This calls the code inside of description.ext //
 };
  
-_role1 = "Welcome to<br />R2 Gaming Epoch <br /><br />Please visit the site for rewards. ";
-_role1names = ["1"];
-_role2 = "Admins:<br />Untugs, Riddlez, Jesstickles,<br />LoneKirov, Education, Zorzor<br />DGuy, Jaggid.";
-_role2names = ["2"];
-_role3 = "Server mods:<br />EpochMod, Altis, wMessage";
-_role3names = ["3"];
-_role4 = "Server anti-hack<br />by infiSTAR.de";
-_role4names = ["4"];
-_role5 = "Server Specs:<br /> 3.4ghz INTEL XEON 100mb Line";
-_role5names = ["5"];
-_role6 = "Website:<br />www.r2clan.net";
-_role6names = ["6"];
-_role7 = "Teamspeak<br />ts3.r2clan.net";
-_role7names = ["7"];
-_role8 = "Sign up and join us in teamspeak.<br />It's always a good time.";
-_role8names = ["8"];
-_role9 = "Keep an eye out for events and for r2 credit rewards.<br />See you in the Barrens of Epoch.";
-_role8names = ["9"];
+_role1 = "Welcome to<br />R2 Gaming Epoch ";
+_role1names = ["Please visit the site for rewards."];
+_role2 = "Admins:";
+_role2names = ["Untugs, Riddlez, Jesstickles,<br />LoneKirov, Education, Zorzor<br />DGuy, Jaggid."];
+_role3 = "Server mods:";
+_role3names = ["EpochMod, Altis, wMessage"];
+_role4 = "Server anti-hack";
+_role4names = ["by infiSTAR.de"];
+_role5 = "Server Specs:";
+_role5names = ["3.4ghz INTEL XEON 100mb Line"];
+_role6 = "Website:";
+_role6names = ["www.r2clan.net"];
+_role7 = "Teamspeak";
+_role7names = ["ts3.r2clan.net"];
+_role8 = "Sign up and join us in teamspeak.";
+_role8names = ["It's always a good time."];
+_role9 = "Keep an eye out for events and for r2 credit rewards.";
+_role9names = ["See you in the Barrens of Epoch."];
 
 {
 sleep 2;
